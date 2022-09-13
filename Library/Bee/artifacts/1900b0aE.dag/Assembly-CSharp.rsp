@@ -351,6 +351,7 @@
 "Assets/Shapes2D/Scripts/PolyMap.cs"
 "Assets/Shapes2D/Scripts/Shape.cs"
 "Assets/Shapes2D/Scripts/Shapes2DPrefs.cs"
+"Assets/spawnScript.cs"
 -langversion:8.0
 
 /deterministic
