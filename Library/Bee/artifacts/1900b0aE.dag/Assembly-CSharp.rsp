@@ -340,6 +340,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/Scripts/spawnScript.cs"
 "Assets/Shapes2D/Demos/DragCamera.cs"
 "Assets/Shapes2D/Demos/Flappy Shapes/Bird.cs"
 "Assets/Shapes2D/Demos/Flappy Shapes/Game.cs"
@@ -351,7 +352,6 @@
 "Assets/Shapes2D/Scripts/PolyMap.cs"
 "Assets/Shapes2D/Scripts/Shape.cs"
 "Assets/Shapes2D/Scripts/Shapes2DPrefs.cs"
-"Assets/spawnScript.cs"
 -langversion:8.0
 
 /deterministic
