@@ -342,6 +342,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/aimScript.cs"
 "Assets/Scripts/moveSystem.cs"
+"Assets/Scripts/pointsCounter.cs"
 "Assets/Scripts/rotationScript.cs"
 "Assets/Scripts/rotationScriptRight.cs"
 "Assets/Scripts/SelectObject.cs"
