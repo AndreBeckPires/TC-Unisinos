@@ -10,7 +10,7 @@ public class moveSystem : MonoBehaviour
 
     public GameObject correctForm;
     private bool mooving;
-
+    public GameObject handler;
     private float startPosX;
     private float startPosY;
     private bool finished;
@@ -61,6 +61,9 @@ public class moveSystem : MonoBehaviour
             //this.transform.localPosition = new Vector3(correctForm.transform.localPosition.x, correctForm.transform.localPosition.y, correctForm.transform.localPosition.z);
             this.transform.position = new Vector3(correctForm.transform.position.x, correctForm.transform.position.y, correctForm.transform.position.z);
             finished = true;
+            handler.GetComponent<pointsToWin>().AddPoints();
+
+
         }
         else
         {

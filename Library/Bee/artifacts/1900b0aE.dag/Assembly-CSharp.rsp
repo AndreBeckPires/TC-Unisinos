@@ -344,6 +344,7 @@
 "Assets/Scripts/changeMinigames.cs"
 "Assets/Scripts/moveSystem.cs"
 "Assets/Scripts/pointsCounter.cs"
+"Assets/Scripts/pointsToWin.cs"
 "Assets/Scripts/rotationScript.cs"
 "Assets/Scripts/rotationScriptRight.cs"
 "Assets/Scripts/SelectObject.cs"

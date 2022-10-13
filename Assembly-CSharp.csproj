@@ -46,6 +46,7 @@
      <Compile Include="Assets\Shapes2D\Demos\Simple Effect\TapEffect.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\Shapes2DPrefs.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\Shape.cs" />
+     <Compile Include="Assets\Scripts\changeMinigames.cs" />
      <Compile Include="Assets\Scripts\SelectObject.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Stress Test\Spawner.cs" />
      <Compile Include="Assets\Scripts\moveSystem.cs" />
@@ -55,7 +56,7 @@
      <Compile Include="Assets\Shapes2D\Demos\Showcase\PacMan.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Game.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\PolyMap.cs" />
-     <Compile Include="Assets\Scripts\changeMinigames.cs" />
+     <Compile Include="Assets\Scripts\pointsToWin.cs" />
      <None Include="Assets\Shapes2D\Shaders\Triangle.cginc" />
      <None Include="Assets\Shapes2D\Shaders\Common.cginc" />
      <None Include="Assets\Shapes2D\Shaders\Ellipse.cginc" />
