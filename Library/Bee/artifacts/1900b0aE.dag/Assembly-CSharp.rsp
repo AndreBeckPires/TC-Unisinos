@@ -350,6 +350,7 @@
 "Assets/Scripts/rotationScriptRight.cs"
 "Assets/Scripts/SelectObject.cs"
 "Assets/Scripts/setResults.cs"
+"Assets/Scripts/spawnerTri.cs"
 "Assets/Scripts/spawnScript.cs"
 "Assets/Shapes2D/Demos/DragCamera.cs"
 "Assets/Shapes2D/Demos/Flappy Shapes/Bird.cs"

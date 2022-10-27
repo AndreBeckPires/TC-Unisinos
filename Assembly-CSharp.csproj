@@ -42,6 +42,7 @@
      <Compile Include="Assets\Scripts\setResults.cs" />
      <Compile Include="Assets\Scripts\pointsCounter.cs" />
      <Compile Include="Assets\Shapes2D\Demos\InputUtils.cs" />
+     <Compile Include="Assets\Scripts\changeColor.cs" />
      <Compile Include="Assets\Scripts\rotationScriptRight.cs" />
      <Compile Include="Assets\Scripts\spawnScript.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Simple Effect\TapEffect.cs" />
@@ -57,7 +58,7 @@
      <Compile Include="Assets\Shapes2D\Demos\Showcase\PacMan.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Game.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\PolyMap.cs" />
-     <Compile Include="Assets\Scripts\changeColor.cs" />
+     <Compile Include="Assets\Scripts\spawnerTri.cs" />
      <None Include="Assets\Shapes2D\Shaders\Triangle.cginc" />
      <None Include="Assets\Shapes2D\Shaders\Common.cginc" />
      <None Include="Assets\Shapes2D\Shaders\Ellipse.cginc" />
