@@ -57,6 +57,7 @@
      <Compile Include="Assets\Shapes2D\Demos\Showcase\PacMan.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Game.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\PolyMap.cs" />
+     <Compile Include="Assets\Scripts\changeColor.cs" />
      <None Include="Assets\Shapes2D\Shaders\Triangle.cginc" />
      <None Include="Assets\Shapes2D\Shaders\Common.cginc" />
      <None Include="Assets\Shapes2D\Shaders\Ellipse.cginc" />

@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.22f1 (a137e5fb0427) revision 10565605'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.2006; Version 2009; 64bit' Language: 'pt' Physical Memory: 16301 MB
+OS: 'Windows 10 Pro; OS build 19043.2130; Version 2009; 64bit' Language: 'pt' Physical Memory: 16301 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ D:/codigos/TC/TC
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60693
+50065
 Successfully changed project path to: D:/codigos/TC/TC
 D:/codigos/TC/TC
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 102.92 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 105.25 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.22f1 (a137e5fb0427)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/Resources/UnitySubsystems
@@ -35,39 +35,39 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002445 seconds.
+Registered in 0.002329 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 110.10 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 107.23 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.916 seconds
+- Completed reload, in  1.915 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1916ms)
-		BeginReloadAssembly (65ms)
+	ReloadAssembly (1915ms)
+		BeginReloadAssembly (69ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (509ms)
-			LoadAssemblies (63ms)
+		EndReloadAssembly (503ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (173ms)
+			SetupTypeCache (172ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (256ms)
+			SetupLoadedEditorAssemblies (251ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (110ms)
+				RefreshPlugins (107ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (105ms)
+				ProcessInitializeOnLoadAttributes (104ms)
 				ProcessInitializeOnLoadMethodAttributes (31ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -75,38 +75,38 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003413 seconds.
+Registered in 0.003703 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\codigos\TC\TC\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\codigos\TC\TC\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 108.27 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 112.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.311 seconds
+- Completed reload, in  1.496 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1312ms)
-		BeginReloadAssembly (160ms)
+	ReloadAssembly (1497ms)
+		BeginReloadAssembly (168ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (1087ms)
-			LoadAssemblies (100ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1265ms)
+			LoadAssemblies (118ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (375ms)
+			SetupTypeCache (409ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (461ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (563ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (108ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (240ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
+				RefreshPlugins (113ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (326ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -115,14 +115,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3701 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 137.4 MB.
 System memory in use after: 137.6 MB.
 
 Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 4153.
-Total: 3.693900 ms (FindLiveObjects: 0.317700 ms CreateObjectMapping: 0.253900 ms MarkObjects: 3.044500 ms  DeleteObjects: 0.076900 ms)
+Total: 5.383400 ms (FindLiveObjects: 0.332100 ms CreateObjectMapping: 0.343400 ms MarkObjects: 4.627500 ms  DeleteObjects: 0.078800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,66 +136,97 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Menu.unity
-  artifactKey: Guid(ced88dc349a584e48ad5a2c4be79a48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(ced88dc349a584e48ad5a2c4be79a48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '317b8fd9e1c4af5f88aa4e0492afc37f') in 0.018919 seconds 
+  path: Assets/Scenes/triopitagorico.unity
+  artifactKey: Guid(5beb66426ba4649449c6620ea17275e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/triopitagorico.unity using Guid(5beb66426ba4649449c6620ea17275e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd764bcafd9de3bfcd1afffd6801555') in 0.021148 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003779 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\codigos\TC\TC\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\codigos\TC\TC\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.154 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1154ms)
-		BeginReloadAssembly (163ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-		EndReloadAssembly (931ms)
-			LoadAssemblies (104ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (371ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (311ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (227ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3690 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.8 MB.
-System memory in use after: 137.1 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 4156.
-Total: 4.843400 ms (FindLiveObjects: 0.328500 ms CreateObjectMapping: 0.305000 ms MarkObjects: 4.182600 ms  DeleteObjects: 0.025800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 1338.319218 seconds.
+  path: Assets/Prefabs/triangulo pitagorico
+  artifactKey: Guid(fa946cbd8a0cc0f40adc7178660a7ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico using Guid(fa946cbd8a0cc0f40adc7178660a7ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c0d0d0db087073b7c65a5c9ec1566c') in 0.005307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.067289 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/3x3.png
+  artifactKey: Guid(16079293d6b86f246a5a8d91122f4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/3x3.png using Guid(16079293d6b86f246a5a8d91122f4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fabc479353a6b41634a195a82ff5ff52') in 0.154422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/5x5.png
+  artifactKey: Guid(d71576931026b354e9ee1c65cb1c6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/5x5.png using Guid(d71576931026b354e9ee1c65cb1c6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86b527119aa5bb2109938e3b96d874e') in 0.013971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/4x4.png
+  artifactKey: Guid(a9aa118ed0dd5ca4c95fc5cfc9d70455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/4x4.png using Guid(a9aa118ed0dd5ca4c95fc5cfc9d70455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '435ee13d3aabfc2e3a2e8bf516bef326') in 0.012014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.991771 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/5x5.png
+  artifactKey: Guid(d71576931026b354e9ee1c65cb1c6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/5x5.png using Guid(d71576931026b354e9ee1c65cb1c6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b1e76ed7003ad75ce7ad7181ddda53e') in 0.011713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.756094 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/5x5.png
+  artifactKey: Guid(d71576931026b354e9ee1c65cb1c6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/5x5.png using Guid(d71576931026b354e9ee1c65cb1c6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b6d18b794be9f6dd3874b1430ebc57e') in 0.011330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.232659 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/4x4.png
+  artifactKey: Guid(a9aa118ed0dd5ca4c95fc5cfc9d70455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/4x4.png using Guid(a9aa118ed0dd5ca4c95fc5cfc9d70455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f94668a7dfa9595575067f20c75fe449') in 0.010829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.159881 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/3x3.png
+  artifactKey: Guid(16079293d6b86f246a5a8d91122f4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/3x3.png using Guid(16079293d6b86f246a5a8d91122f4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24be94146bd195e3033d8dbc15fe44bc') in 0.010780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 433.636140 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/7x7.png
+  artifactKey: Guid(d2721e70556892d48aade0a31c4de167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/7x7.png using Guid(d2721e70556892d48aade0a31c4de167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85fc5cb4d44ea118e3c7a84836023529') in 0.020291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 371.953734 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/3x3.png
+  artifactKey: Guid(16079293d6b86f246a5a8d91122f4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/3x3.png using Guid(16079293d6b86f246a5a8d91122f4e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'babd176289f589af1f529676764f88c7') in 0.016864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.004165 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/4x4.png
+  artifactKey: Guid(a9aa118ed0dd5ca4c95fc5cfc9d70455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/4x4.png using Guid(a9aa118ed0dd5ca4c95fc5cfc9d70455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259225c8435c95d7e8099f065c7615c4') in 0.015403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/5x5.png
+  artifactKey: Guid(d71576931026b354e9ee1c65cb1c6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/5x5.png using Guid(d71576931026b354e9ee1c65cb1c6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e7983dd154df47d0f4f333c7cc44a0') in 0.012228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/24x24.png
+  artifactKey: Guid(52246adac172ee2418ddf7761087edbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/24x24.png using Guid(52246adac172ee2418ddf7761087edbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2a41c97b4a09cb5979d6f93efc28b9') in 0.018408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/25x25.png
+  artifactKey: Guid(07c9d490ba164db47be9c1ddebe40e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/25x25.png using Guid(07c9d490ba164db47be9c1ddebe40e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b4f2d258a8bd3a337dfcc62b8c84d93') in 0.043613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Prefabs/triangulo pitagorico/7x7 1.png
+  artifactKey: Guid(ce11aa0c6ae2f674c91d57a8f5e1c3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/triangulo pitagorico/7x7 1.png using Guid(ce11aa0c6ae2f674c91d57a8f5e1c3fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a088fe315148dd485fb64de08d82488c') in 0.013613 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
