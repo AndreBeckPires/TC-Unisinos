@@ -1,4 +1,5 @@
 
+using System.Net;
 using Microsoft.VisualBasic;
 using System.Data.SqlTypes;
 using System.Collections;
@@ -9,8 +10,10 @@ public class selectTriangle : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public Sprite[] newSprite;
-    int t1 = 0;
-    int t2 = 0;
+    public Sprite[] oSprite;
+    public GameObject[] objetos;
+    public int t1 = 0;
+    public int t2 = 0;
     bool st1 = false;
     bool st2 = false;
     bool first = true;
@@ -38,7 +41,7 @@ public class selectTriangle : MonoBehaviour
 
     void MouseInput()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Vector2 raycastPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(raycastPos, Vector2.zero);
@@ -55,7 +58,6 @@ public class selectTriangle : MonoBehaviour
                         st2 = false;
                         t1++;
                         first = false;
-                        Debug.Log("entrou");
                     }
                     if(hit.collider.tag == "T2")
                     {
@@ -63,7 +65,7 @@ public class selectTriangle : MonoBehaviour
                         st1 = false;
                         t2++;
                         first = false;
-                        Debug.Log("entrou");
+                       
                     }
                 }
                 else{
@@ -71,13 +73,15 @@ public class selectTriangle : MonoBehaviour
                     {
                         if(hit.collider.tag == "T1")
                         {
-                            Debug.Log("1++");
+                            
                             t1++;
                         }
                         if(hit.collider.tag == "T2")
                         {
                             t1 = 0;
+                            t2++;
                             first = true;
+                            error();
                         }
                     }
                     if(st2)
@@ -85,12 +89,14 @@ public class selectTriangle : MonoBehaviour
                         if(hit.collider.tag == "T2")
                         {
                             t2++;
-                            Debug.Log("2++");
+                           
                         }
                         if(hit.collider.tag == "T1")
                         {
                             t2 = 0;
+                            t1++;
                             first = true;
+                            error();
                         }
                     }
                     
@@ -99,10 +105,25 @@ public class selectTriangle : MonoBehaviour
                 }
                 //Debug.Log(hit.collider.gameObject.tag);
                 spriteRenderer = hit.collider.gameObject.GetComponent<SpriteRenderer>();
-                spriteRenderer.sprite = newSprite[0];
+                for(int i = 0; i < newSprite.Length; i++)
+                {
+                    if(newSprite[i].name == hit.collider.gameObject.name + "hl")
+                    spriteRenderer.sprite = newSprite[i];
+                }
+                //spriteRenderer.sprite = newSprite[0];
                 
             }
         }
-        
+    }
+    void error()
+    {
+        for(int i =0; i < objetos.Length; i++)
+        {
+            for(int j =0; j < oSprite.Length; j++)
+            {
+                if(objetos[i].name == oSprite[j].name)
+                objetos[i].GetComponent<SpriteRenderer>().sprite = oSprite[j];
+            }
+        }
     }
 }

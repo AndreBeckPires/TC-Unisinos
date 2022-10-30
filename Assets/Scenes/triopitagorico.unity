@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 28882494}
   - component: {fileID: 28882495}
   m_Layer: 0
-  m_Name: 24x24 1
+  m_Name: 24x24
   m_TagString: T2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28882492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.1, y: -28.3, z: 100.21162}
+  m_LocalPosition: {x: 2.8, y: -4.2, z: 100.21162}
   m_LocalScale: {x: 0.22805838, y: 0.22805838, z: 0.22805838}
   m_Children: []
   m_Father: {fileID: 894774300}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 376575522}
   - component: {fileID: 376575523}
   m_Layer: 0
-  m_Name: 3x3 1
+  m_Name: 3x3
   m_TagString: T1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,7 +319,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376575520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.8, y: 13.8, z: 99.96874}
+  m_LocalPosition: {x: -4.9, y: 4.08, z: 99.96874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1608744563}
@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 949162519}
   - component: {fileID: 949162520}
   m_Layer: 0
-  m_Name: 4x4 1
+  m_Name: 4x4
   m_TagString: T1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -575,7 +575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949162517}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.7, y: 16, z: 99.96874}
+  m_LocalPosition: {x: 7.14, y: 4.5, z: 99.96874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1608744563}
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 1033487386}
   - component: {fileID: 1033487388}
   m_Layer: 0
-  m_Name: 5x5 1
+  m_Name: 5x5
   m_TagString: T1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -767,7 +767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033487385}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.201445, y: 22.123661, z: 99.96874}
+  m_LocalPosition: {x: 1.97, y: 4.96, z: 99.96874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1608744563}
@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 1288555809}
   - component: {fileID: 1288555810}
   m_Layer: 0
-  m_Name: 7x7 2
+  m_Name: 7x7
   m_TagString: T2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -898,7 +898,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288555807}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.983955, y: -27.958927, z: 100.21162}
+  m_LocalPosition: {x: 10.4, y: -3.9, z: 100.21162}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 894774300}
@@ -1137,7 +1137,7 @@ GameObject:
   - component: {fileID: 1657681907}
   - component: {fileID: 1657681909}
   m_Layer: 0
-  m_Name: 25x25 1
+  m_Name: 25x25
   m_TagString: T2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1203,7 +1203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657681906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.2, y: -20.5, z: 100.21162}
+  m_LocalPosition: {x: -4.8, y: -4, z: 100.21162}
   m_LocalScale: {x: 0.27606496, y: 0.27606496, z: 0.27606496}
   m_Children: []
   m_Father: {fileID: 894774300}
@@ -1362,6 +1362,22 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 71bf6458a5b157449a82e3dfcdc19850, type: 3}
   - {fileID: 21300000, guid: aa860a9f1b71a174da09c045b27e703f, type: 3}
   - {fileID: 21300000, guid: 4cc9b174fbe5b2e40a2afebe4b4dbb4d, type: 3}
+  oSprite:
+  - {fileID: 21300000, guid: 16ff8000b6c95b04b9720182968a8049, type: 3}
+  - {fileID: 21300000, guid: 271d0488b9709d94284058d9e27af688, type: 3}
+  - {fileID: 21300000, guid: 1226f060a95b00449b1715f7031628f4, type: 3}
+  - {fileID: 21300000, guid: f4997205b0f57be40a4e03000f4696f5, type: 3}
+  - {fileID: 21300000, guid: d80cea7922d57854aa102f264bcf2894, type: 3}
+  - {fileID: 21300000, guid: 1f359d5252184f5449523c9bb8288fd5, type: 3}
+  objetos:
+  - {fileID: 376575520}
+  - {fileID: 949162517}
+  - {fileID: 1033487385}
+  - {fileID: 1288555807}
+  - {fileID: 28882492}
+  - {fileID: 1657681906}
+  t1: 0
+  t2: 0
 --- !u!4 &2026827619
 Transform:
   m_ObjectHideFlags: 0
