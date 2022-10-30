@@ -349,6 +349,7 @@
 "Assets/Scripts/rotationScript.cs"
 "Assets/Scripts/rotationScriptRight.cs"
 "Assets/Scripts/SelectObject.cs"
+"Assets/Scripts/selectTriangle.cs"
 "Assets/Scripts/setResults.cs"
 "Assets/Scripts/spawnerTri.cs"
 "Assets/Scripts/spawnScript.cs"
