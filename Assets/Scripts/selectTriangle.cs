@@ -1,10 +1,12 @@
 
+using System.Runtime.InteropServices.ComTypes;
 using System.Net;
 using Microsoft.VisualBasic;
 using System.Data.SqlTypes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class selectTriangle : MonoBehaviour
 {
@@ -12,12 +14,14 @@ public class selectTriangle : MonoBehaviour
     public Sprite[] newSprite;
     public Sprite[] oSprite;
     public GameObject[] objetos;
+    public GameObject explosion;
     public int t1 = 0;
     public int t2 = 0;
     bool st1 = false;
     bool st2 = false;
     bool first = true;
-
+    public Text txt;
+    int points = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,13 +33,30 @@ public class selectTriangle : MonoBehaviour
     {
         MouseInput();
         if(t1 == 3)
-        {
-            Debug.Log("win");
+        {   
+            t1 =0;
+            points++;
+            txt.text = points.ToString();
+            Instantiate(explosion, objetos[0].transform.position, Quaternion.identity);
+            Destroy(objetos[0]);
+            Instantiate(explosion, objetos[1].transform.position, Quaternion.identity);
+            Destroy(objetos[1]);
+            Instantiate(explosion, objetos[2].transform.position, Quaternion.identity);
+            Destroy(objetos[2]);
         }
         
         if(t2 == 3)
-        {
-            Debug.Log("win");
+        {   
+            t2 =0;
+            points++;
+            txt.text = points.ToString();
+            Instantiate(explosion, objetos[3].transform.position, Quaternion.identity);
+            Destroy(objetos[3]);
+            Instantiate(explosion, objetos[4].transform.position, Quaternion.identity);
+            Destroy(objetos[4]);
+            Instantiate(explosion, objetos[5].transform.position, Quaternion.identity);
+            Destroy(objetos[5]);
+            
         }
     }
 
@@ -73,7 +94,6 @@ public class selectTriangle : MonoBehaviour
                     {
                         if(hit.collider.tag == "T1")
                         {
-                            
                             t1++;
                         }
                         if(hit.collider.tag == "T2")
