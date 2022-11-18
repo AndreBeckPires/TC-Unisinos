@@ -12,10 +12,11 @@ public class spawnerTri : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Triangulos[Random.Range(0,1)].SetActive(false);
+        //Triangulos[Random.Range(0,1)].SetActive(false);
         if(Triangulos[0].activeSelf)
         {
             //t1
+          
             for(int i = 0; i < t1.Length; i++)
             {   
                 int num = Random.Range(0, changePositions.Length);
@@ -31,6 +32,7 @@ public class spawnerTri : MonoBehaviour
         }
         if(Triangulos[1].activeSelf)
         {
+        
             //t2
             for(int i = 0; i < t2.Length; i++)
             {   
