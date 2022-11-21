@@ -6,6 +6,7 @@ TagManager:
   tags:
   - T1
   - T2
+  - T1T2
   layers:
   - Default
   - TransparentFX
