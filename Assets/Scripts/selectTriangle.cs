@@ -17,8 +17,10 @@ public class selectTriangle : MonoBehaviour
     public GameObject explosion;
     public int t1 = 0;
     public int t2 = 0;
+    public int t3 = 0;
     public bool st1 = false;
     public bool st2 = false;
+    public bool st3 = false;
     public bool first = true;
     public Text txt;
     int points = 0;
@@ -73,6 +75,22 @@ public class selectTriangle : MonoBehaviour
             neutro = false;
             
         }
+        if(t3 == 3)
+        {
+             t3 =0;
+            points++;
+            txt.text = points.ToString();
+            for(int i = 0; i < objToDestroy.Count; i++)
+            {
+                 Instantiate(explosion, objToDestroy[i].transform.position, Quaternion.identity);
+                  Destroy(objToDestroy[i]);
+            }
+             objToDestroy.Clear();
+        
+            st3 = false;
+            first = true;
+            neutro = false;
+        }
     }
 
     void MouseInput()
@@ -92,11 +110,24 @@ public class selectTriangle : MonoBehaviour
                         error();
                         Debug.Log("1");
                     }
+                    
                     if(t1 != 0 )
                     {
                          if(hit.collider.tag == "T2")
                         error();
                         Debug.Log("2");
+                    }
+                     if(hit.collider.tag == "T3")
+                    {
+                        objToDestroy.Add(hit.collider.gameObject);
+                        
+                        st1 = false;
+                        st2 = false;
+                        st3 = true;
+                        t3++;
+                        first = false;
+                        Debug.Log("T3");
+                      
                     }
                     if(hit.collider.tag == "T1")
                     {
@@ -127,8 +158,24 @@ public class selectTriangle : MonoBehaviour
                     }
                 }
                 else{
-                  
-                    if(st1 == false && st2 == false)
+                    if(neutro)
+                    {
+                        if(hit.collider.tag == "T3")
+                        {
+                              t1 = 0;
+                              t2 = 0;
+                            t3++;
+                           st1 = false;
+                           st2 = false;
+                            st3 = true;
+                            neutro = false;
+                            error();
+                             objToDestroy.Add(hit.collider.gameObject);
+                            Debug.Log("neutro pra t3");
+                            
+                        }
+                    }
+                    if(st1 == false && st2 == false && st3 == false)
                     {
                          if(hit.collider.tag == "T1")
                          {
@@ -154,7 +201,20 @@ public class selectTriangle : MonoBehaviour
                             st1 = false;
                             t1 = 0;
                             t2 = 0;  
-                          }                          
+                          }
+                          if( hit.collider.name == "T3")
+                          {
+                            error();
+                            Debug.Log("T3ERROR");  
+                           
+                            st2 = false;
+                            st1 = false;
+                            st3 = true;
+                            neutro = false;
+                            t1 = 0;
+                            t2 = 0;
+                            t3++;  
+                          }                               
                     }
                    else if(st1)
                     {
@@ -179,6 +239,20 @@ public class selectTriangle : MonoBehaviour
                             Debug.Log("9");
                             
                         }
+                        if(hit.collider.tag == "T3")
+                        {
+                            t1 = 0;
+                            t2 = 0;
+                            t3++;
+                           st1 = false;
+                           st2 = false;
+                           st3 = true;
+                        neutro = false;
+                            error();
+                             objToDestroy.Add(hit.collider.gameObject);
+                            Debug.Log("errou agora é t3");
+                            
+                        }
                         if(hit.collider.name == "5x5")
                         {
                             if(neutro)
@@ -194,6 +268,7 @@ public class selectTriangle : MonoBehaviour
                             st1 = true;
                             st2= false;
                             t1++;
+                            neutro = true;
                              objToDestroy.Add(hit.collider.gameObject);
                             }
                            
@@ -245,6 +320,77 @@ public class selectTriangle : MonoBehaviour
                             }
                             
                          Debug.Log("14");
+                        }
+                            if(hit.collider.tag == "T3")
+                        {
+                            t1 = 0;
+                            t2 = 0;
+                            t3++;
+                           st1 = false;
+                           st2 = false;
+                           st3 = true;
+                        neutro = false;
+                            error();
+                             objToDestroy.Add(hit.collider.gameObject);
+                            Debug.Log("errou 2 agora é t3");
+                            
+                        }
+                    }
+                    else if(st3)
+                    {
+                        
+                        if(hit.collider.tag == "T3")
+                        {
+                            st1 = false;
+                            st2 = false;
+                            st3 = true;
+                            t3++;
+                        Debug.Log("T3++");
+                        objToDestroy.Add(hit.collider.gameObject);
+                        }
+                        if(hit.collider.tag == "T1"  &&  hit.collider.name != "5x5")
+                        {
+                            //  st1 = true;
+                          //  st2 = false;
+                            t2 = 0;
+                            t3 = 0;
+                            t1++;
+                            neutro = false;
+                            st2 = false;
+                            st1 = true;
+                            st3 = false;
+                            Debug.Log("errou pra t1");
+                            error();
+                              objToDestroy.Add(hit.collider.gameObject);
+                        }
+                          if(hit.collider.tag == "T2"  &&  hit.collider.name != "5x5")
+                        {
+                            //  st1 = true;
+                          //  st2 = false;
+                            t1 = 0;
+                            t2++;
+                            t3 = 0;
+                            neutro = false;
+                            st2 = true;
+                            st1 = false;
+                            st3 = false;
+                            Debug.Log("errou pra t2");
+                            error();
+                              objToDestroy.Add(hit.collider.gameObject);
+                        }
+                        if(hit.collider.name == "5x5")
+                        {
+                        first = false;
+                        neutro = true;
+                        Debug.Log("errou pra 5x5");
+                        t1 = 0;
+                        t2 = 0;
+                        t3 = 0;
+                        st1 = false;
+                        st2 = false;
+                        st3 = false;
+                        error();
+                        objToDestroy.Add(hit.collider.gameObject);
                         }
                     }
                     
