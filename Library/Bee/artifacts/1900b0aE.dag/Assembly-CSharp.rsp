@@ -347,6 +347,7 @@
 "Assets/Scripts/DialogueManager.cs"
 "Assets/Scripts/DialogueTrigger.cs"
 "Assets/Scripts/moveSystem.cs"
+"Assets/Scripts/playerController.cs"
 "Assets/Scripts/pointsCounter.cs"
 "Assets/Scripts/pointsToWin.cs"
 "Assets/Scripts/rotationScript.cs"
