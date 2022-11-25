@@ -8,15 +8,19 @@ public class playerController : MonoBehaviour
     public Rigidbody2D playerRb;
     public Animator animator;
     Vector2 movment;
+
+  
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
     void Update()
     {
+        
        movment.x = Input.GetAxisRaw("Horizontal");
        movment.y = Input.GetAxisRaw("Vertical");
 
