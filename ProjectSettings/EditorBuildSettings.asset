@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: ced88dc349a584e48ad5a2c4be79a48f
   - enabled: 1
+    path: Assets/Scenes/town.unity
+    guid: 1292a8eabd4109c40b995f7f36536ed5
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/minigame2.unity
     guid: d54084c58eb786141b76cca8c596d80e
+  - enabled: 1
+    path: Assets/Scenes/triopitagorico.unity
+    guid: 5beb66426ba4649449c6620ea17275e0
   m_configObjects: {}

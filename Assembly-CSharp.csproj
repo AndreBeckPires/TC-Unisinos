@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\selectTriangle.cs" />
      <Compile Include="Assets\Scripts\rotationScriptRight.cs" />
      <Compile Include="Assets\Scripts\spawnScript.cs" />
+     <Compile Include="Assets\Scripts\entrada1.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Simple Effect\TapEffect.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\Shapes2DPrefs.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\Shape.cs" />
