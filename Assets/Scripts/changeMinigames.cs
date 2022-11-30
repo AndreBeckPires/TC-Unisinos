@@ -28,6 +28,6 @@ public class changeMinigames : MonoBehaviour
 
     public void goMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("town");
     }
 }
