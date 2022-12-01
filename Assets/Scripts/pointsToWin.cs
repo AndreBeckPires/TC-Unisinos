@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class pointsToWin : MonoBehaviour
 {
@@ -11,22 +12,29 @@ public class pointsToWin : MonoBehaviour
     public GameObject canvas, loose;
     public GameObject t1,t2,tb1,tb2,t3,tb3;
     public int winsCounter = 0;
-    public float timer = 8;
+    public float timer;
     public bool f1 = false,f2 = false,f3 = false;
-
+    public Text timerText;
+    public GameObject timerCanvas;
+    public bool isActive;
     // Start is called before the first frame update
     void Start()
     {
         pointsToWinGame = items.Length;
+        isActive = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(isActive == true)
+        {
         timer -= Time.deltaTime;
+        timerText.text = timer.ToString("F0");
         if(timer <= 0)
         {
-           // youLoose();
+           timerCanvas.SetActive(false);
+            youLoose();
         }
         if(winsCounter >= 3)
         {
@@ -35,6 +43,7 @@ public class pointsToWin : MonoBehaviour
         if(currentPoints >= pointsToWinGame){
             //win
            // youWin();
+          timer = 10;
            currentPoints = 0;
            winsCounter++;
            if(t1.activeSelf)
@@ -82,6 +91,8 @@ public class pointsToWin : MonoBehaviour
             }
            }
         }
+        }
+       
     }
 
     public void AddPoints()
@@ -93,8 +104,19 @@ public class pointsToWin : MonoBehaviour
     }
     public void youLoose(){
         loose.SetActive(true);
+        t1.SetActive(false);
+        t2.SetActive(false);
+        tb1.SetActive(false);
+        tb2.SetActive(false);
+        t3.SetActive(false);
+        tb3.SetActive(false);;
+
     }
     public void restart(){
         SceneManager.LoadScene("SampleScene");
+    }
+    public void setTimer(float newTimer){
+        timer = newTimer;
+        isActive = true;
     }
 }

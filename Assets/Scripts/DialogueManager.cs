@@ -10,7 +10,9 @@ public class DialogueManager : MonoBehaviour
     public Text nameTxt, dialogueTxt;
     private Queue<string> sentences;
     public Animator animator;
-
+    public GameObject button;
+    public GameObject pointsToWin;
+    public GameObject triggerGame;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,7 +59,9 @@ public class DialogueManager : MonoBehaviour
     void EndDialoge()
     {
         animator.SetBool("isOpen", false);
-       
+        button.SetActive(false);
+        pointsToWin.GetComponent<pointsToWin>().setTimer(8);
+        triggerGame.GetComponent<spawnercolorchanger>().start();
     }
     // Update is called once per frame
     
