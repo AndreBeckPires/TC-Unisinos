@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52652018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.09, y: -5.92, z: 100}
+  m_LocalPosition: {x: -14.7, y: -11.94, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1228795777}
@@ -310,7 +310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171896414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.65, y: -5.92, z: 100}
+  m_LocalPosition: {x: 40.71, y: -11.82, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1228795777}
@@ -503,7 +503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537850614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.02, y: 0, z: 100}
+  m_LocalPosition: {x: 14.89, y: 8.89, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1228795777}
@@ -936,7 +936,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988700333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.02, y: -2.98, z: 100}
+  m_LocalPosition: {x: 15.77, y: -1.72, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1228795777}
@@ -1041,7 +1041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1228795776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1057,6 +1057,7 @@ MonoBehaviour:
   Triangulos:
   - {fileID: 1560122494}
   - {fileID: 173037459}
+  - {fileID: 325532241}
   changePositions:
   - {fileID: 1904125708}
   - {fileID: 537850614}
@@ -1075,6 +1076,20 @@ MonoBehaviour:
   - {fileID: 725145472}
   - {fileID: 787664876}
   - {fileID: 1960169076}
+  t3:
+  - {fileID: 1526418281}
+  - {fileID: 155784992}
+  - {fileID: 1107710688}
+  squares:
+  - {fileID: 1526418281}
+  - {fileID: 155784992}
+  - {fileID: 1107710688}
+  - {fileID: 725145472}
+  - {fileID: 787664876}
+  - {fileID: 1960169076}
+  - {fileID: 1104330356}
+  - {fileID: 388490961}
+  - {fileID: 1597112948}
 --- !u!4 &1228795777
 Transform:
   m_ObjectHideFlags: 0
@@ -1329,7 +1344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304744839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.65, y: -2.98, z: 100}
+  m_LocalPosition: {x: 40.6, y: -1.55, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1228795777}
@@ -1581,7 +1596,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448258478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.65, y: 0, z: 100}
+  m_LocalPosition: {x: 40.87, y: 8.44, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1228795777}
@@ -2198,7 +2213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762915387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.09, y: -2.98, z: 100}
+  m_LocalPosition: {x: -13.39, y: -1.94, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1228795777}
@@ -2500,7 +2515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904125708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.09, y: 0, z: 100}
+  m_LocalPosition: {x: -13.99, y: 8.96, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1228795777}
@@ -2591,7 +2606,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909600386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.02, y: -5.92, z: 100}
+  m_LocalPosition: {x: 17.37, y: -12.05, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1228795777}
@@ -2797,6 +2812,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 54815ccf03e50db4cb1b4bf8c3995e2b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db9b69d3b80d2294e9da6730d391d46e, type: 3}
+--- !u!1 &2108090510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2094895972938069998, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+  m_PrefabInstance: {fileID: 2094895973842123408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &612522325890600226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2809,9 +2829,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 600175482}
     - target: {fileID: 612522324274998032, guid: 325e5fa0c3c5a954ebe9e0fb759e4cd5, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 1228795775}
+    - target: {fileID: 612522324274998032, guid: 325e5fa0c3c5a954ebe9e0fb759e4cd5, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 860993717}
+    - target: {fileID: 612522324274998032, guid: 325e5fa0c3c5a954ebe9e0fb759e4cd5, type: 3}
+      propertyPath: spawnerObj
+      value: 
+      objectReference: {fileID: 1228795775}
     - target: {fileID: 612522324274998032, guid: 325e5fa0c3c5a954ebe9e0fb759e4cd5, type: 3}
       propertyPath: dialogueTxt
       value: 
@@ -2863,6 +2891,10 @@ PrefabInstance:
     - target: {fileID: 612522324274998035, guid: 325e5fa0c3c5a954ebe9e0fb759e4cd5, type: 3}
       propertyPath: m_Name
       value: DialogueManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 612522324274998035, guid: 325e5fa0c3c5a954ebe9e0fb759e4cd5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 325e5fa0c3c5a954ebe9e0fb759e4cd5, type: 3}
@@ -2972,6 +3004,48 @@ PrefabInstance:
     - target: {fileID: 2094895972642703415, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094895972938069776, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: buttonInit
+      value: 
+      objectReference: {fileID: 2108090510}
+    - target: {fileID: 2094895972938069776, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094895972938069776, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Bem vindo, voc\xEA esta familiarizado com o termo \"Terno Pitag\xF3rico\"?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094895972938069776, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "O Terno Pitag\xF3rico s\xE3o os tr\xEAs n\xFAmeros naturais que juntos
+        formam um tri\xE2ngulo rect\xE2ngulo"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094895972938069776, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "Voc\xEA n\xE3o lembra o que \xE9 um tri\xE2ngulo rect\xE2ngulo?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094895972938069776, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "Pois bem, tri\xE2ngulo ret\xE2ngulo \xE9 todo tri\xE2ngulo constitu\xEDdo
+        por \xE2ngulo de 30, 60 e 90 graus."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094895972938069776, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: "Vamos ver se voc\xEA entendeu"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094895972938069776, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: "Me ajude a selecionar os objetos que un\xEDdos formam Ternos Pitag\xF3ricos"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094895972938069999, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094895973014747733, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
+      propertyPath: m_Text
+      value: Iniciar
       objectReference: {fileID: 0}
     - target: {fileID: 2094895973292870122, guid: 4e3c4ca71e24f4746b1a866ac1f18611, type: 3}
       propertyPath: m_Text

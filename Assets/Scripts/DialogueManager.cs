@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject button;
     public GameObject pointsToWin;
     public GameObject triggerGame;
+    public GameObject spawnerObj;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void StartDialogue(Dialogue dialogue){
-
+        
         animator.SetBool("isOpen", true);
         
         nameTxt.text = dialogue.name;
@@ -37,6 +38,7 @@ public class DialogueManager : MonoBehaviour
     {
         if(sentences.Count ==0)
         {
+            Debug.Log("entrou3");
             EndDialoge();
             return;
         }
@@ -58,10 +60,30 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialoge()
     {
+        if(spawnerObj != null)
+        {
+        Debug.Log("entrou spawn");
+        spawnerObj.GetComponent<spawnerTri>().spawn();
+        }
+
         animator.SetBool("isOpen", false);
         button.SetActive(false);
-        pointsToWin.GetComponent<pointsToWin>().setTimer(8);
-        triggerGame.GetComponent<spawnercolorchanger>().start();
+        
+        if(pointsToWin != null)
+        {
+            Debug.Log("entrou1");
+             pointsToWin.GetComponent<pointsToWin>().setTimer(8);
+        }
+        if(triggerGame != null)
+        {
+            Debug.Log("entrou2");
+             triggerGame.GetComponent<spawnercolorchanger>().start();
+        }
+        
+
+
+        
+    
     }
     // Update is called once per frame
     
