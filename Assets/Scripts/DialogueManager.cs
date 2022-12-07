@@ -13,11 +13,18 @@ public class DialogueManager : MonoBehaviour
     public GameObject button;
     public GameObject pointsToWin;
     public GameObject triggerGame;
-    public GameObject spawnerObj;
+    public GameObject playButton;
+    public bool isPlaying;
     // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string>();   
+        isPlaying = false;
+        sentences = new Queue<string>();
+     
+        if(button != null)
+        {
+            Debug.Log("button");
+        }
     }
 
     public void StartDialogue(Dialogue dialogue){
@@ -36,10 +43,12 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+       
         if(sentences.Count ==0)
         {
-            Debug.Log("entrou3");
+            
             EndDialoge();
+            isPlaying = true;
             return;
         }
 
@@ -60,23 +69,24 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialoge()
     {
-        if(spawnerObj != null)
-        {
-        Debug.Log("entrou spawn");
-        spawnerObj.GetComponent<spawnerTri>().spawn();
-        }
 
+        
+       
         animator.SetBool("isOpen", false);
         button.SetActive(false);
+      
+        
+           
+
         
         if(pointsToWin != null)
         {
-            Debug.Log("entrou1");
+            
              pointsToWin.GetComponent<pointsToWin>().setTimer(8);
         }
         if(triggerGame != null)
         {
-            Debug.Log("entrou2");
+
              triggerGame.GetComponent<spawnercolorchanger>().start();
         }
         

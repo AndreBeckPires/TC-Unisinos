@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class entrada1 : MonoBehaviour
 {
+   // public GameObject trigger;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +28,10 @@ public class entrada1 : MonoBehaviour
             SceneManager.LoadScene("minigame2");
             if(this.gameObject.name == "entrada2")
             SceneManager.LoadScene("triopitagorico");   
-            if(this.gameObject.name == "entrada3")
-            SceneManager.LoadScene("SampleScene");        
+           if(this.gameObject.name == "entrada3")
+           SceneManager.LoadScene("SampleScene");   
+               
+
         }
     }
 }
