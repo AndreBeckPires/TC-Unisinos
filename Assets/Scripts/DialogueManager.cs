@@ -15,12 +15,29 @@ public class DialogueManager : MonoBehaviour
     public GameObject triggerGame;
     public GameObject playButton;
     public bool isPlaying;
+    public GameObject front;
+    public GameObject[] alvos;
+    public GameObject[] plates;
+    public GameObject[] lever;
     // Start is called before the first frame update
     void Start()
     {
         isPlaying = false;
         sentences = new Queue<string>();
-     
+        for(int i =0; i < alvos.Length; i++)
+        {
+            alvos[i].SetActive(false);
+        }
+        for(int i =0; i < plates.Length; i++)
+        {
+            plates[i].SetActive(false);
+        }
+        for(int i =0; i < lever.Length; i++)
+        {
+            lever[i].SetActive(false);
+        }
+        front.SetActive(false);
+
         if(button != null)
         {
             Debug.Log("button");
@@ -75,7 +92,22 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("isOpen", false);
         button.SetActive(false);
       
-        
+        if(front != null)
+        {
+            for(int i =0; i < alvos.Length; i++)
+            {
+                alvos[i].SetActive(true);
+            }
+            for(int i =0; i < plates.Length; i++)
+            {
+                plates[i].SetActive(true);
+            }
+            for(int i =0; i < lever.Length; i++)
+            {
+                lever[i].SetActive(true);
+            }
+            front.SetActive(true);
+        }
            
 
         
