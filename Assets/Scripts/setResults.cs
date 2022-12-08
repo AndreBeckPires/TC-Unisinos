@@ -43,8 +43,10 @@ public class setResults : MonoBehaviour
             spawn();
         int correctAnswer = Random.Range(0,2);
         do{
-            wrong = Random.Range(-10, 10);
-        }while(wrong == right);
+            wrong = Random.Range(0, 5);
+            Debug.Log("wrong" + wrong);
+            Debug.Log("it" + iterator);
+        }while(wrong == index[iterator]);
        
         goals[correctAnswer].name = "correct";
         if(correctAnswer == 1)
@@ -58,7 +60,7 @@ public class setResults : MonoBehaviour
         {
             if(i != correctAnswer)
             {
-                result[i].text = wrong.ToString();
+                result[i].text = names[wrong].ToString();
             }
         }
         }

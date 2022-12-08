@@ -114,7 +114,7 @@ public class DialogueManager : MonoBehaviour
         if(pointsToWin != null)
         {
             
-             pointsToWin.GetComponent<pointsToWin>().setTimer(8);
+             pointsToWin.GetComponent<pointsToWin>().setTimer(10);
         }
         if(triggerGame != null)
         {
