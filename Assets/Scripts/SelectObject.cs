@@ -12,12 +12,15 @@ public class SelectObject : MonoBehaviour
     float defaultRotation;
     Vector3[] pos;
     float[] rotations;
+   public GameObject toDestroy;
+   public bool destroy;
     void Update()
     {
         // Call every frame
         MouseInput();
     }
     void Start(){
+        destroy = false;
         defaultRotation = lever.GetComponent<Rigidbody2D>().rotation;
         pos[0] = goals[0].transform.position;
         rotations[0] = goals[0].GetComponent<Rigidbody2D>().rotation;
@@ -61,7 +64,7 @@ public class SelectObject : MonoBehaviour
                             goals[0].GetComponent<rotationScript>().setShouldRotate(true);
                             hit.collider.gameObject.GetComponent<Rigidbody2D>().rotation = -90.0f;
                            // Destroy(hit.collider.gameObject);
-                            pointsCounter.GetComponent<pointsCounter>().setPoints(-1);
+                            pointsCounter.GetComponent<pointsCounter>().fim = true;
                             goals[0].GetComponent<rotationScript>().hideRotate();
                             selected = false;
                             Debug.Log("2");
@@ -89,7 +92,7 @@ public class SelectObject : MonoBehaviour
                              goals[1].GetComponent<rotationScriptRight>().setShouldRotate(true);
                             hit.collider.gameObject.GetComponent<Rigidbody2D>().rotation = 90.0f;
                            // Destroy(hit.collider.gameObject);
-                            pointsCounter.GetComponent<pointsCounter>().setPoints(-1);
+                            pointsCounter.GetComponent<pointsCounter>().fim = true;
                             goals[1].GetComponent<rotationScriptRight>().hideRotate();
                              selected = false; 
                              Debug.Log("4");
@@ -102,7 +105,7 @@ public class SelectObject : MonoBehaviour
                     {
                          resultSelector.GetComponent<setResults>().selectRight();
                     }
-           
+                    Destroy(toDestroy);
                     selected = true;
                     goals[0].GetComponent<rotationScript>().setShouldRotate(true);
                     goals[1].GetComponent<rotationScriptRight>().setShouldRotate(true);
@@ -114,5 +117,11 @@ public class SelectObject : MonoBehaviour
                 //Destroy(hit.collider.gameObject);
             }
         }
+    }
+
+    public void changeObj(string name)
+    {
+        toDestroy =  GameObject.Find(name);
+        destroy = true;
     }
 }
