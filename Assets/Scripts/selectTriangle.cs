@@ -27,10 +27,11 @@ public class selectTriangle : MonoBehaviour
     public bool neutro = false;
     public List<GameObject> objToDestroy = new List<GameObject>();
      private  Color[] colors = {new Color(1,0,0,1), new Color(1,1,1,1)};
+     public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -46,6 +47,7 @@ public class selectTriangle : MonoBehaviour
             {
                  Instantiate(explosion, objToDestroy[i].transform.position, Quaternion.identity);
                   Destroy(objToDestroy[i]);
+                  audio.Play(0);
             }
             objToDestroy.Clear();
             st1 = false;
@@ -68,6 +70,7 @@ public class selectTriangle : MonoBehaviour
             {
                  Instantiate(explosion, objToDestroy[i].transform.position, Quaternion.identity);
                   Destroy(objToDestroy[i]);
+                  audio.Play(0);
             }
              objToDestroy.Clear();
             st2 = false;
@@ -84,6 +87,7 @@ public class selectTriangle : MonoBehaviour
             {
                  Instantiate(explosion, objToDestroy[i].transform.position, Quaternion.identity);
                   Destroy(objToDestroy[i]);
+                  audio.Play(0);
             }
              objToDestroy.Clear();
         

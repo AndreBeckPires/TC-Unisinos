@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\pointsToWin.cs" />
      <Compile Include="Assets\Shapes2D\Demos\DragCamera.cs" />
      <Compile Include="Assets\Scripts\backButton.cs" />
+     <Compile Include="Assets\Scripts\replay.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Bird.cs" />
      <Compile Include="Assets\Scripts\setResults.cs" />
      <Compile Include="Assets\Scripts\spawnerTri.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\Shapes2D\Scripts\Shape.cs" />
      <Compile Include="Assets\Scripts\SelectObject.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Stress Test\Spawner.cs" />
+     <Compile Include="Assets\Scripts\quitGame.cs" />
      <Compile Include="Assets\Scripts\moveSystem.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Simple Effect\EffectDemo.cs" />
      <Compile Include="Assets\Scripts\aimScript.cs" />
@@ -68,7 +70,6 @@
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Game.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\PolyMap.cs" />
-     <Compile Include="Assets\Scripts\replay.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Shapes2D\Shaders\Triangle.cginc" />

@@ -8,11 +8,12 @@ public class rotationScriptRight : MonoBehaviour
     public Rigidbody2D rigidBody2D;
     public bool show;
     public bool shouldRotate = true;
-
+    public AudioSource audio;
+    public bool tocou = false, tocou2 = false;
     void Start()
     {
         rigidBody2D = GetComponent<Rigidbody2D>();
-        
+        audio = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -23,7 +24,13 @@ public class rotationScriptRight : MonoBehaviour
             {
                 if(rigidBody2D.rotation < 0f)
                 {
-                     rigidBody2D.rotation += 1.0f;
+                    if(!tocou)
+                    {
+                        audio.Play(0);
+                        tocou = true;
+                    }
+                    
+                    rigidBody2D.rotation += 1.0f;
                 }
         }
        
@@ -32,6 +39,11 @@ public class rotationScriptRight : MonoBehaviour
             
                 if(rigidBody2D.rotation > -90.0f)
                 {
+                   if(!tocou2)
+                    {
+                        audio.Play(0);
+                        tocou2 = true;
+                    }
                     rigidBody2D.rotation -= 1.0f;
                 }
             }
@@ -48,5 +60,7 @@ public class rotationScriptRight : MonoBehaviour
     }
     public void setShouldRotate(bool set){
         shouldRotate = set;
+        tocou = false;
+        tocou2 = false;
     }
 }

@@ -7,7 +7,7 @@ using UnityEngine;
 public class moveSystem : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    public AudioSource audio;
     public GameObject correctForm;
     private bool mooving;
     public GameObject handler;
@@ -18,6 +18,7 @@ public class moveSystem : MonoBehaviour
     private Vector3 resetPosition;
     void Start()
     {
+         audio = GetComponent<AudioSource>();
         resetPosition = this.transform.localPosition;   
     }
 
@@ -58,6 +59,7 @@ public class moveSystem : MonoBehaviour
         if(Mathf.Abs(this.transform.localPosition.x - correctForm.transform.localPosition.x) <= 0.5f &&
             Mathf.Abs(this.transform.localPosition.y - correctForm.transform.localPosition.y) <= 0.5f)
         {
+             audio.Play(0);
             //this.transform.localPosition = new Vector3(correctForm.transform.localPosition.x, correctForm.transform.localPosition.y, correctForm.transform.localPosition.z);
             this.transform.position = new Vector3(correctForm.transform.position.x, correctForm.transform.position.y, correctForm.transform.position.z);
             finished = true;
