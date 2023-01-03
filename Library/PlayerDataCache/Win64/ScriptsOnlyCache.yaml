@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - playerController
     - pointsCounter
     - pointsToWin
+    - quitGame
     - replay
     - rotationScript
     - rotationScriptRight
@@ -26,11 +27,11 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -125,6 +126,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6304}
     - Class: 114
       Script: {instanceID: 6808}
+    - Class: 114
+      Script: {instanceID: 7182}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -172,6 +175,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -205,13 +212,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6808}
     - Class: 114
-      Script: {instanceID: 7434}
+      Script: {instanceID: 7182}
     - Class: 114
-      Script: {instanceID: 7970}
+      Script: {instanceID: 7436}
     - Class: 114
-      Script: {instanceID: 8806}
+      Script: {instanceID: 7972}
     - Class: 114
-      Script: {instanceID: 22912}
+      Script: {instanceID: 8808}
+    - Class: 114
+      Script: {instanceID: 23030}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -253,6 +262,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -292,13 +305,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6808}
     - Class: 114
-      Script: {instanceID: 7744}
+      Script: {instanceID: 7182}
     - Class: 114
-      Script: {instanceID: 7974}
+      Script: {instanceID: 7746}
     - Class: 114
-      Script: {instanceID: 8806}
+      Script: {instanceID: 7976}
     - Class: 114
-      Script: {instanceID: 22912}
+      Script: {instanceID: 8808}
+    - Class: 114
+      Script: {instanceID: 23030}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -347,9 +362,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 654}
     - Class: 114
+      Script: {instanceID: 1558}
+    - Class: 114
+      Script: {instanceID: 2942}
+    - Class: 114
+      Script: {instanceID: 3254}
+    - Class: 114
       Script: {instanceID: 3946}
     - Class: 114
       Script: {instanceID: 5758}
+    - Class: 114
+      Script: {instanceID: 6246}
+    - Class: 114
+      Script: {instanceID: 7182}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -359,6 +384,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -398,9 +429,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 654}
     - Class: 114
+      Script: {instanceID: 1558}
+    - Class: 114
+      Script: {instanceID: 2942}
+    - Class: 114
+      Script: {instanceID: 3254}
+    - Class: 114
       Script: {instanceID: 3946}
     - Class: 114
       Script: {instanceID: 5758}
+    - Class: 114
+      Script: {instanceID: 6246}
+    - Class: 114
+      Script: {instanceID: 7182}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -410,6 +451,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -449,9 +496,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 654}
     - Class: 114
+      Script: {instanceID: 1558}
+    - Class: 114
+      Script: {instanceID: 2942}
+    - Class: 114
+      Script: {instanceID: 3254}
+    - Class: 114
       Script: {instanceID: 3946}
     - Class: 114
       Script: {instanceID: 5758}
+    - Class: 114
+      Script: {instanceID: 6246}
+    - Class: 114
+      Script: {instanceID: 7182}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -461,6 +518,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -500,9 +563,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 654}
     - Class: 114
+      Script: {instanceID: 1558}
+    - Class: 114
+      Script: {instanceID: 2942}
+    - Class: 114
+      Script: {instanceID: 3254}
+    - Class: 114
       Script: {instanceID: 3946}
     - Class: 114
       Script: {instanceID: 5758}
+    - Class: 114
+      Script: {instanceID: 6246}
+    - Class: 114
+      Script: {instanceID: 7182}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -512,6 +585,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -545,6 +624,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -589,9 +672,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6808}
     - Class: 114
-      Script: {instanceID: 8806}
+      Script: {instanceID: 7182}
     - Class: 114
-      Script: {instanceID: 22912}
+      Script: {instanceID: 8808}
+    - Class: 114
+      Script: {instanceID: 23030}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1187,7 +1272,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: a1d51b1e9c2cefe1153ac48e44e056d0
+      Hash: c69917b4084bc150c0c94c253f36654e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: selectTriangle
@@ -1223,7 +1308,7 @@ ScriptsOnlyBuild:
     className: IKEditorManagerHelper
   - hash:
       serializedVersion: 2
-      Hash: f937fa066c4ebcbc9d772ca5327452cc
+      Hash: 56747f0f4eea19ada555d72c00b39dad
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: rotationScriptRight
@@ -1434,6 +1519,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: quitGame
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnDragMessageListener
@@ -1475,7 +1566,7 @@ ScriptsOnlyBuild:
     className: RuleTile
   - hash:
       serializedVersion: 2
-      Hash: 48908d0b351d7fadaa48e62a81b586dc
+      Hash: 7dd9cfa357fe0bb6955900f099579de6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: moveSystem
@@ -1729,4 +1820,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/town E.unity
   - Assets/Scenes/town M.unity
   - Assets/Scenes/town.unity
-  playerPath: D:/codigos/TC/TC/Build/TC.exe
+  playerPath: D:/codigos/TC/TC/Build/Geometry Challenge.exe

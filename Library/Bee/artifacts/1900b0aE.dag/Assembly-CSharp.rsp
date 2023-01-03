@@ -350,6 +350,7 @@
 "Assets/Scripts/mainMenu.cs"
 "Assets/Scripts/moveSystem.cs"
 "Assets/Scripts/playerController.cs"
+"Assets/Scripts/playerPush.cs"
 "Assets/Scripts/pointsCounter.cs"
 "Assets/Scripts/pointsToWin.cs"
 "Assets/Scripts/quitGame.cs"

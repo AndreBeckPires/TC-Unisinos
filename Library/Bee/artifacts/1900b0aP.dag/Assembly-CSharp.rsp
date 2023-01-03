@@ -305,6 +305,7 @@
 "Assets/Scripts/playerController.cs"
 "Assets/Scripts/pointsCounter.cs"
 "Assets/Scripts/pointsToWin.cs"
+"Assets/Scripts/quitGame.cs"
 "Assets/Scripts/replay.cs"
 "Assets/Scripts/rotationScript.cs"
 "Assets/Scripts/rotationScriptRight.cs"
