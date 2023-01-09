@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\pointsToWin.cs" />
      <Compile Include="Assets\Shapes2D\Demos\DragCamera.cs" />
+     <Compile Include="Assets\Scripts\playerPush.cs" />
      <Compile Include="Assets\Scripts\backButton.cs" />
      <Compile Include="Assets\Scripts\replay.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Bird.cs" />
@@ -48,6 +49,7 @@
      <Compile Include="Assets\Scripts\pointsCounter.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
+     <Compile Include="Assets\Scripts\boxpull.cs" />
      <Compile Include="Assets\Shapes2D\Demos\InputUtils.cs" />
      <Compile Include="Assets\Scripts\changeColor.cs" />
      <Compile Include="Assets\Scripts\showCursor.cs" />
@@ -70,7 +72,6 @@
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Game.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\PolyMap.cs" />
-     <Compile Include="Assets\Scripts\playerPush.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Shapes2D\Shaders\Triangle.cginc" />
