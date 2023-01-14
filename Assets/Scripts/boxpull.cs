@@ -29,7 +29,7 @@ public class boxpull : MonoBehaviour
             xPos = transform.position.x;
             yPos = transform.position.y;
         }
-        if(this.transform.position.x - goal.transform.position.x < 0.001f && this.transform.position.y - goal.transform.position.y < 0.001f)
+        if(this.transform.position.x - goal.transform.position.x > 0.001f && this.transform.position.y - goal.transform.position.y > 0.001f)
         {
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
             this.GetComponent<FixedJoint2D>().enabled = false;
