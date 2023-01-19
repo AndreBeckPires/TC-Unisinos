@@ -687,6 +687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 1614315595}
+  spawner: {fileID: 2033419446}
 --- !u!255 &209563304
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -8543,6 +8544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 669182310}
+  spawner: {fileID: 2033419446}
 --- !u!255 &372849932
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -9028,6 +9030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 204150831}
+  spawner: {fileID: 2033419446}
 --- !u!255 &559999809
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -10948,6 +10951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 284735242}
+  spawner: {fileID: 2033419446}
 --- !u!255 &695831724
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -12127,6 +12131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 380232767}
+  spawner: {fileID: 2033419446}
 --- !u!60 &867979099
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12332,6 +12337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 315003659}
+  spawner: {fileID: 2033419446}
 --- !u!255 &951577975
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -12552,6 +12558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 240787181}
+  spawner: {fileID: 2033419446}
 --- !u!255 &1022434161
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -12750,6 +12757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 1689662068}
+  spawner: {fileID: 2033419446}
 --- !u!255 &1023169756
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -13083,6 +13091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 94290064}
+  spawner: {fileID: 2033419446}
 --- !u!255 &1136602936
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -13282,6 +13291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 1081501311}
+  spawner: {fileID: 2033419446}
 --- !u!255 &1164933046
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -13480,6 +13490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 286446333}
+  spawner: {fileID: 2033419446}
 --- !u!255 &1425579852
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -13677,6 +13688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 115721138}
+  spawner: {fileID: 2033419446}
 --- !u!255 &1505830512
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -13915,6 +13927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 1956272896}
+  spawner: {fileID: 0}
 --- !u!255 &1604500723
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -14346,6 +14359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 906368030}
+  spawner: {fileID: 2033419446}
 --- !u!255 &1764197985
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -14784,6 +14798,8 @@ MonoBehaviour:
   objs:
   - {fileID: 1846156943}
   - {fileID: 1547440369}
+  objectsCount: 0
+  points: 0
 --- !u!1 &2087143200
 GameObject:
   m_ObjectHideFlags: 0
@@ -14834,6 +14850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beingPushed: 0
   goal: {fileID: 69431735}
+  spawner: {fileID: 2033419446}
 --- !u!255 &2087143203
 FixedJoint2D:
   m_ObjectHideFlags: 0

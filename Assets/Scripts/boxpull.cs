@@ -8,6 +8,7 @@ public class boxpull : MonoBehaviour
     float xPos,yPos;
     public GameObject goal;
     Rigidbody2D rb;
+    public GameObject spawner;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class boxpull : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
             this.GetComponent<FixedJoint2D>().enabled = false;
+            spawner.GetComponent<newSpawner>().changeCount(1);
            this.gameObject.tag = "T1";
            if(this.GetComponent<PolygonCollider2D>()){
                     this.GetComponent<PolygonCollider2D>().enabled = false;

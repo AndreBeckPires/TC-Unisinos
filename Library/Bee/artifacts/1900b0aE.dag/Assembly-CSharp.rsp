@@ -350,6 +350,7 @@
 "Assets/Scripts/entrada1.cs"
 "Assets/Scripts/mainMenu.cs"
 "Assets/Scripts/moveSystem.cs"
+"Assets/Scripts/newSpawner.cs"
 "Assets/Scripts/playerController.cs"
 "Assets/Scripts/playerPush.cs"
 "Assets/Scripts/pointsCounter.cs"
