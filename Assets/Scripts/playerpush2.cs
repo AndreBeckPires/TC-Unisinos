@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerPush : MonoBehaviour
+public class playerpush2 : MonoBehaviour
 {
-    public float distance = 1.0f;
+   public float distance = 1.0f;
     public LayerMask boxMask;
     public GameObject box;
     public GameObject displayer;
@@ -19,17 +19,16 @@ public class playerPush : MonoBehaviour
     {
         Physics2D.queriesStartInColliders = false;
 		RaycastHit2D hit= Physics2D.Raycast (transform.position, Vector2.left * transform.localScale.x, distance, boxMask);
-
         if (hit.collider != null && hit.collider.gameObject.tag == "pushable" && Input.GetKeyDown(KeyCode.E)) {
                 box = hit.collider.gameObject;
                 Debug.Log("entrou");
                 box.GetComponent<FixedJoint2D>().enabled = true;
-                box.GetComponent<boxpull>().beingPushed = true;
+                box.GetComponent<boxpull2>().beingPushed = true;
                  box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D> ();
-        }else if(hit.collider != null && hit.collider.gameObject.tag == "pushable" && Input.GetKeyUp(KeyCode.E))
+        }else if(Input.GetKeyUp(KeyCode.E))
         {
             box.GetComponent<FixedJoint2D>().enabled = false;
-            box.GetComponent<boxpull>().beingPushed = false;
+            box.GetComponent<boxpull2>().beingPushed = false;
 
         }
     }

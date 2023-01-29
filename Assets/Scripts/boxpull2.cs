@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class boxpull : MonoBehaviour
+public class boxpull2 : MonoBehaviour
 {
     public bool beingPushed;
     float xPos,yPos;
@@ -30,14 +30,11 @@ public class boxpull : MonoBehaviour
             xPos = transform.position.x;
             yPos = transform.position.y;
         }
-        if(goal != null)
-        {
-if(this.transform.position.x - goal.transform.position.x > 0.001f && this.transform.position.y - goal.transform.position.y > 0.001f)
+        if(this.transform.position.x - goal.transform.position.x > 0.001f && this.transform.position.y - goal.transform.position.y > 0.001f)
         {
             rb.constraints = RigidbodyConstraints2D.FreezeAll;
             this.GetComponent<FixedJoint2D>().enabled = false;
-            if(spawner != null)
-            spawner.GetComponent<newSpawner>().changeCount(1);
+            
            this.gameObject.tag = "T1";
            if(this.GetComponent<PolygonCollider2D>()){
                     this.GetComponent<PolygonCollider2D>().enabled = false;
@@ -51,7 +48,5 @@ if(this.transform.position.x - goal.transform.position.x > 0.001f && this.transf
             Destroy(goal);
            Debug.Log("nolugar");
          }
-        }
-        
     }
 }
