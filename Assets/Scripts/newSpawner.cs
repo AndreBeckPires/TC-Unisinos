@@ -7,9 +7,15 @@ public class newSpawner : MonoBehaviour
     public GameObject[] objs;
     public int objectsCount;
     public int points =0;
+    public GameObject canvas;
+    public GameObject block;
+    public GameObject door;
+    public float timeRemaining = 1.0f;
+    public bool finished;
     // Start is called before the first frame update
     void Start()
     {
+        finished = false;
         int value = Random.Range(0, 2);
         Debug.Log(value);
         if(value == 0)
@@ -27,6 +33,15 @@ public class newSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         if (timeRemaining > 0 && finished == true)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+        if(timeRemaining > 0 && finished)
+        {
+            block.GetComponent<Rigidbody2D>().MovePosition(block.GetComponent<Rigidbody2D>().position + new Vector2(0, 0.3f) * Time.fixedDeltaTime);
+        }
+        
         if(objectsCount <= 0)
         {
             if(objs[1].activeSelf)
@@ -51,6 +66,10 @@ public class newSpawner : MonoBehaviour
             objs[0].SetActive(false);
             objs[1].SetActive(false);
             Debug.Log("cabou");
+           // canvas.SetActive(true);
+           finished = true;
+           door.SetActive(true);
+
         }
         
     }
