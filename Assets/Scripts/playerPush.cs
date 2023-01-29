@@ -7,6 +7,7 @@ public class playerPush : MonoBehaviour
     public float distance = 1.0f;
     public LayerMask boxMask;
     public GameObject box;
+    public GameObject displayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +33,20 @@ public class playerPush : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "lever")
+        {
+            Debug.Log("Colidiu");
+            collision.gameObject.GetComponent<Rigidbody2D>().rotation = 28.305f;
+             displayer.GetComponent<spawnStrings>().display();
+               displayer.GetComponent<spawnStrings>().Shuffle();
+        }
+    }
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position, (Vector2)transform.position+ Vector2.left*transform.localScale.x * distance);
+       
     }
 }

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000012276180264, guid: 6c9b74b5b1c0448dd89ec27ebec7a7eb, type: 3}
       propertyPath: m_Name
-      value: losa Variant
+      value: Losango
       objectReference: {fileID: 0}
     - target: {fileID: 4000012708970212, guid: 6c9b74b5b1c0448dd89ec27ebec7a7eb, type: 3}
       propertyPath: m_RootOrder
