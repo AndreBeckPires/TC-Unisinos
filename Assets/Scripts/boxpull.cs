@@ -54,4 +54,9 @@ if(this.transform.position.x - goal.transform.position.x > 0.001f && this.transf
         }
         
     }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("Colidindo");
+    }
 }

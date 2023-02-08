@@ -8,6 +8,8 @@ TagManager:
   - T2
   - T1T2
   - T3
+  - pushable
+  - lever
   layers:
   - Default
   - TransparentFX

@@ -38,8 +38,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\pointsToWin.cs" />
      <Compile Include="Assets\Shapes2D\Demos\DragCamera.cs" />
+     <Compile Include="Assets\formatpull.cs" />
      <Compile Include="Assets\Scripts\playerPush.cs" />
      <Compile Include="Assets\Scripts\backButton.cs" />
+     <Compile Include="Assets\Scripts\spawnStrings.cs" />
      <Compile Include="Assets\Scripts\replay.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Bird.cs" />
      <Compile Include="Assets\Scripts\setResults.cs" />
@@ -51,6 +53,7 @@
      <Compile Include="Assets\Scripts\playerController.cs" />
      <Compile Include="Assets\Scripts\boxpull.cs" />
      <Compile Include="Assets\Shapes2D\Demos\InputUtils.cs" />
+     <Compile Include="Assets\Scripts\playerpush2.cs" />
      <Compile Include="Assets\Scripts\changeColor.cs" />
      <Compile Include="Assets\Scripts\showCursor.cs" />
      <Compile Include="Assets\Scripts\selectTriangle.cs" />
@@ -63,6 +66,7 @@
      <Compile Include="Assets\Scripts\SelectObject.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Stress Test\Spawner.cs" />
      <Compile Include="Assets\Scripts\quitGame.cs" />
+     <Compile Include="Assets\Scripts\boxpull2.cs" />
      <Compile Include="Assets\Scripts\newSpawner.cs" />
      <Compile Include="Assets\Scripts\moveSystem.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Simple Effect\EffectDemo.cs" />

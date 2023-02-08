@@ -8,6 +8,7 @@ public class playerPush : MonoBehaviour
     public LayerMask boxMask;
     public GameObject box;
     public GameObject displayer;
+    public GameObject[] box_goals;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +43,8 @@ public class playerPush : MonoBehaviour
             collision.gameObject.GetComponent<Rigidbody2D>().rotation = 28.305f;
              displayer.GetComponent<spawnStrings>().display();
                displayer.GetComponent<spawnStrings>().Shuffle();
+           box_goals[0].GetComponent<Collider2D>().enabled = true; 
+           box_goals[1].GetComponent<Collider2D>().enabled = true; 
         }
     }
     void OnDrawGizmos()
