@@ -9,6 +9,12 @@ public class playerPush : MonoBehaviour
     public GameObject box;
     public GameObject displayer;
     public GameObject[] box_goals;
+    public GameObject[] doors;
+    public GameObject door;
+     public float timeRemaining = 10.0f;
+    public bool abrindo = false;
+    public bool fechando = false;
+    public int controlador = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +39,36 @@ public class playerPush : MonoBehaviour
             box.GetComponent<boxpull>().beingPushed = false;
 
         }
+          if (timeRemaining > 0 && abrindo == true)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+        if(timeRemaining > 0 && abrindo)
+        {
+            fechando = false;
+            doors[0].GetComponent<Rigidbody2D>().MovePosition(doors[0].GetComponent<Rigidbody2D>().position + new Vector2(2.0f, 0f) * Time.fixedDeltaTime);
+            doors[1].GetComponent<Rigidbody2D>().MovePosition(doors[1].GetComponent<Rigidbody2D>().position + new Vector2(2.0f, 0f) * Time.fixedDeltaTime);
+        }
+        else if(timeRemaining <= 0 && abrindo){
+            abrindo = false;
+            timeRemaining = 1.0f;
+            controlador++;
+            
+        }
+
+        if(timeRemaining > 0 && fechando)
+        {
+            timeRemaining -= Time.deltaTime;
+            doors[0].GetComponent<Rigidbody2D>().MovePosition(doors[0].GetComponent<Rigidbody2D>().position + new Vector2(-2.0f, 0f) * Time.fixedDeltaTime);
+            doors[1].GetComponent<Rigidbody2D>().MovePosition(doors[1].GetComponent<Rigidbody2D>().position + new Vector2(-2.0f, 0f) * Time.fixedDeltaTime);
+        }
+        else if(timeRemaining <= 0 && fechando){
+            fechando = false;
+            timeRemaining = 1.0f;
+            controlador++;
+            
+        }
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -43,8 +79,27 @@ public class playerPush : MonoBehaviour
             collision.gameObject.GetComponent<Rigidbody2D>().rotation = 28.305f;
              displayer.GetComponent<spawnStrings>().display();
                displayer.GetComponent<spawnStrings>().Shuffle();
-           box_goals[0].GetComponent<Collider2D>().enabled = true; 
+
+        if(controlador%2 == 0 )
+        {
+           
+            abrindo = true;
+            fechando = false;
+            box_goals[0].GetComponent<Collider2D>().enabled = false; 
+           box_goals[1].GetComponent<Collider2D>().enabled = false; 
+        }
+        else{
+           
+            box_goals[0].GetComponent<Collider2D>().enabled = true; 
            box_goals[1].GetComponent<Collider2D>().enabled = true; 
+          abrindo = false;
+          fechando = true;
+        }
+           
+       
+
+           
+          
         }
     }
     void OnDrawGizmos()
